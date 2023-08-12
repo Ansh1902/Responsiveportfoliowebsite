@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/07afcad6e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="left"><img src="logo.png" class="Logo"></div>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Services</a> </li>
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Engineering Student</p>
+                <h1>Hi, I am <span>Ansh</span> <br>from India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------about----------->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> 
+                        Greetings and welcome to my portfolio website! I'm Ansh,
+                        a passionate and dedicated Student with a creative flair and an insatiable curiosity.
+                        My journey in Engineering has been a captivating exploration of soft skills, problem solving, photography. 
+                        With an eye for detail and a drive for excellence, I thrive on turning imaginative concepts into 
+                        tangible, impactful realities. Beyond the pixels and code, I believe in the power of collaboration 
+                        and the magic that emerges when diverse minds converge. This portfolio showcases a selection of my endeavors, 
+                        each representing a chapter of my commitment to pushing boundaries and crafting compelling narratives. 
+                        Join me in traversing the realms of software development as we embark on a visual and intellectual adventure together. 
+                        Thank you for visiting – I can't wait to connect and explore new horizons with you.</p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>C/C++</span><br>Problem solving</li>
+                                <li><span>HTML/CSS and Javascript</span><br>Web Development</li>
+                                <li><span>MS-Office</span><br>Data Manipulation</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Bachelors of Engineering(2020-2024)</span><br>Thapar Institute of Engineering and Technology<br>Electronics and Computer Engineering<br>CGPA-7.38</li>
+                                <li><span>Higher Senior Secondary Education(2019-20)</span><br>Pratap Public School,Karnal<br>Percentage-95.6</li>
+                                <li><span>Senior Secondary Education(2017-18)</span><br>Pratap Public School,Karnal<br>Percentage-93.4</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------Services---------------->
+
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-internet-explorer"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Problem Solving</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-helmet-un"></i>
+                <h2>Hardware Implementation</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--------------Portfolio------------------>
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="website.jpg">
+                <div class="layer">
+                    <h3><b>Portfolio Website</b></h3>
+                    <p>Introduction Segment:Concise self-introduction highlighting key attributes.
+                        Education Background:Displaying academic achievements and qualifications.
+                        Adaptive Design:Crafting a visually appealing and seamlessly functional across diverse devices (desktop, tablet,
+                        mobile).
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="helmet.jpg">
+                <div class="layer">
+                    <h3><b>IOT based Smart Helmet</b></h3>
+                    <p>An innovative wearable device that seamlessly integrates advanced technologies to significantly enhance safety and
+                        deliver real-time assistance during critical emergency situations.
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="ironmanog.jpg">
+                <div class="layer">
+                    <h3><b>Desktop Voice Assistant(IRONMAN)</b></h3>
+                    <p>Facilitates Wikipedia inquiries, providing insightful search results.Effortlessly curates and plays music selections at your command.
+                        Proficiently launches websites including Google, YouTube, and more using a web browser interface
+                        </p>
+                        <a href="https://github.com/Ansh1902/Iron-Man.git"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------Contact----------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>9215662000</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ansh-kharbanda-64b8711a6/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Ansh1902"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/ansh_kharbanda/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"  placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169 2023. Made by Ansh</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ 
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right='0';
+    }
+    function closemenu(){
+        sidemenu.style.right='-200px';
+    }
+</script>    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz4DQ-Lo-MnCDDPT_CpGp92FiBKPPy2Wpf2fAlSCsdJoaUs4aJsqiBXTFbxnEkKU9M1/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
